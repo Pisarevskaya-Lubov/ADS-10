@@ -31,7 +31,6 @@ class Tree {
       readTree(child, sequence);
     }
   }
-  
   void addElem(Node* rootptr, const std::vector<char>& sequence) {
     if (rootptr == nullptr) {
       root = rootptr = new Node;
@@ -45,7 +44,7 @@ class Tree {
       addElem(num, updateSequence);
     }
   }
-  
+
  public:
   explicit Tree(const std::vector<char>& init) : root(nullptr) {
     createPerm(init);
